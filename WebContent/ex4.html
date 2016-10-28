@@ -9,7 +9,29 @@
 		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
 		<script type="text/javascript">
 		$(function(){
-			$("#first").css("color","red");
+			setTimeout(function(){
+				$("#first").css("color","red");
+				$("#fourth").css("color", "#00f");
+				
+				var $third = $("#third");
+			  /*$third.css("color", "#0f0"); //write
+				$thrid.css("fontWeight", "bold"); 
+ 				$("#third").css("font-weight", "bold") */
+				
+				$third.css({
+					color: "#0f0",
+					fontWeight: "bold"
+				})
+				
+				var $second = $("#second");
+ 				$second.css({
+ 					
+ 				})
+
+ 				console.log($third.css("color")); //read
+ 				
+				
+			}, 2000);
 		});
 		</script>
 	</head>

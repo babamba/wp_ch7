@@ -9,7 +9,13 @@
 		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
 		<script type="text/javascript">
 		$(function(){
-			$("li:first-child").css("color","red");
+			setTimeout(function(){
+				//css2
+				$("li:first-child").css("color","red");
+				
+				//css3
+				$("li:nth-child(2)").css("color","red");
+			},2000)
 		});
 		</script>
 	</head>

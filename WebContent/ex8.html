@@ -10,7 +10,19 @@
 		<script type="text/javascript">
 		
 		$(function(){
+			setTimeout(function(){
 			$("#first, #third").css("color","red");
+		/* 	$("ul li#second").css("color","red"); */
+		/* 	$("ul #second, li #fourth").css("color","blue"); */
+		/* 	$("#second, #fourth").css("color", "red") */
+		
+			$("ul #second, li #fourth").css({
+				"color":"blue",
+				"fontSize":"2em",
+				"fontWeight":"bold"
+				
+			});
+			},2000);
 		});
 		
 		</script>

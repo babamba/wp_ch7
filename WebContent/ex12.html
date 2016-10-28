@@ -8,46 +8,62 @@
 		<title>sample16</title>
 		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
 		<script type="text/javascript">
+		$(function(){
+			setTimeout(function(){
+				$("li[id]").css("color", "red");
+				$("li[class]").css("color", "blue");
+				$("li[title]").css("fontWeight", "bold");
+				
+				$("li[class='second']").css("fontStyle", "italic");
+				$("li[class!='second']").css("textDecoration", "underline");
+				
+				
+			}, 2000)
+		})
+		
 		</script>
+		
 	</head>
-	<body style="overflow-y:scroll">
+<body>
+	<div style = "width:400px; weight:100px; overflow-y:scroll">
 		<ul>
-			<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-						<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			<li class="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-			</ul>
-	</body>
+		<li title= "하이" id="first">텍스트1 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트2 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트3 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트4 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트5 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+	</ul>
+	</div>
+</body>
 </html>
