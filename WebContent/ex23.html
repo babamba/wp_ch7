@@ -5,12 +5,27 @@
 <script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
 <script type="text/javascript">
 	$( function() {
-	
+		setTimeout(function(){
+			var html = "<strong>카타파하</strong>";
+			$("#p1").append(html);
+			
+			
+				var html2 = "<strong>키티피히</strong>";
+				$("#p2").before(html2);
+				
+				
+					var html3 = "<strong>커터퍼허</strong>";
+					$("#p3").after(html3);
+		},2000);
+		
+		// ajax 과정 1.데이터를 가져온다 2.문서로 조립한다. 3.위치에 입힌다.
 		/* 코드를 완성하세요 */
 	} );  
 </script>
 </head>
 <body>
 <p id="p1">가나다라마바사아자차</p>
+<p id="p2">기니디리미비시이지치<p>
+<p id="p3">거너더러머버서어저처</p>
 </body>
 </html>

@@ -6,16 +6,21 @@
 <script type="text/javascript">
 	$( function() {
 		/* 코드를 완성하세요 */
-
-		
+		setTimeout(function(){
+			$("strong, p").
+			wrapAll("<div>")/* 리턴한값이 */.
+			parent().
+			css({"padding": "10px", "border": "1px solid #aaa"})
+			
+		}, 2000)
 	} );  
 </script>
 </head>
 <body>
 
-
+<div>
 <strong>타이틀입니다.</strong>
 <p>내용입니다.</p>
-
+</div>
 </body>
 </html>
