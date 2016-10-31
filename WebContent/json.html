@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type = "text/javascript" src="jquery/jquery-1.9.0.js"></script>
+<script>
+$(function(){
+	$("#ajax-btn").click(function(){
+		$.ajax({
+			url:"/mysite3/ajax?no=10&name=babamba",
+			type:"get",
+			dataType:"json",
+			data:"", 							//post방식으로 데이터를 보낼 때 query String이 여기 들어온다.
+			//contentType:"application/json"	//data를 query String이 아닌 json 형식( { } )으로 데이터를 보낼때 적어준다.
+			success : function(response) {//callback  //성공했을때 호출
+				$(response).each(function(index, vo){
+					console.log(vo);
+				});
+			},
+			error : function(jqXHR, status, e){	//실패했을때 
+				console.error(status + ":" + e);
+			}
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<button id="ajax-btn">데이터 가져오기</button>
+</body>
+</html>
